@@ -21,6 +21,11 @@ public class GreetingController {
 	public Greeting greeting() {
 		return business.greeting2();
 	}
+	@RequestMapping(value = "/*")
+	public Greeting hi() {
+		
+		return business.hello();
+	}
 
 	@RequestMapping(value = "/greeting/{name}")
 	public Greeting greeting(@PathVariable("name") String name) {

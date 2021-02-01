@@ -13,5 +13,13 @@ public class GreetingBusiness {
 		Greeting g = new Greeting("name est obligatorie. Merci de le renseigner.");
 		return g;
 	}
+	
+	public Greeting hello() {
+		Greeting g = new Greeting("Bienvenue dans notre site : "
+				+ "Merci de naviguer sur .../ArchiJEEWSRestTP/greeting   ------- "
+				+ "ou ----- .../ArchiJEEWSRestTP/greeting3?name=IMZILI    -------"
+				+ "ou -------.../ArchiJEEWSRestTP/greeting2");
+		return g;
+	}
 
 }
